@@ -35,7 +35,7 @@ def main():
         elif key_lst[pg.K_DOWN]:
             tate=1 
         elif key_lst[pg.K_RIGHT]:
-            yoko=1
+            yoko=2
         elif key_lst[pg.K_LEFT]:
             yoko=-1
         kk_rct.move_ip((yoko,tate))
