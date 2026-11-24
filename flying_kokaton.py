@@ -25,8 +25,6 @@ def main():
         screen.blit(bg_img2, [1600-x, 0])
         screen.blit(bg_img, [-x+3200, 0])
 
-        kk_rct.move_ip((-1,0))
-
         key_lst=pg.key.get_pressed()
         yoko=0
         tate=0
@@ -38,7 +36,7 @@ def main():
             yoko=2
         elif key_lst[pg.K_LEFT]:
             yoko=-1
-        kk_rct.move_ip((yoko,tate))
+        kk_rct.move_ip((yoko-1,tate))
 
         screen.blit(kk_img,kk_rct)
 
